@@ -5,7 +5,11 @@ type ButtonProps = {
 };
 
 export const Button = ({ disabled, onClick, text }: ButtonProps) => (
-  <button className="button" onClick={onClick} disabled={disabled}>
+  <button
+    className="bg-gray-300 px-10 py-3 rounded text-[18px]"
+    onClick={onClick}
+    disabled={disabled}
+  >
     {text}
   </button>
 );
